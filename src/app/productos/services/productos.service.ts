@@ -8,7 +8,7 @@ import { Productos, Respuesta } from '../interfaces/productos.interface';
     providedIn: 'root'
 })
 export class ProductosService {
-    private baseUrl: String = environment.baseUrl;
+    private baseUrl: string = environment.baseUrl;
 
     constructor(private http: HttpClient) { }
 
@@ -16,7 +16,7 @@ export class ProductosService {
         return this.http.get<Productos[]>(this.baseUrl + '/all');
     }
 
-    obtenerPorId(termino: String): Observable<Respuesta> {
+    obtenerPorId(termino: string): Observable<Respuesta> {
         return this.http.get<Respuesta>(this.baseUrl + '/' + termino);
     }
 
