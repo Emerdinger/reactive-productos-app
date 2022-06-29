@@ -1,0 +1,8 @@
+<div class="inicio-productos">
+    <h1>Productos</h1>
+    <p>Crea tus productos y miralos listados aquí!</p>
+    <a routerLink="/productos/nuevo">Crear producto</a>
+</div>
+<div class="productos-list">
+    <app-listar-productos *ngFor="let producto of productos" [producto]="producto" (eliminarEvent)="eliminarProducto($event)"></app-listar-productos>
+</div>

@@ -1,0 +1,70 @@
+.producto-card {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.producto-card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto-card-top .producto-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-info h3 {
+    font-size: 120%;
+}
+
+.producto-info .producto-ca {
+    display: flex;
+    flex-direction: row;
+}
+
+.producto-info .producto-ca p{
+    font-weight: 800;
+}
+
+.producto-info .producto-ca span{
+    margin-left: 5px;
+}
+
+.producto-img {
+    margin-left: 10px;
+}
+
+.producto-img img{
+    width: 200px;
+}
+
+.producto-mid {
+
+}
+
+.producto-bottom {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+button {
+    background-color: red;
+    border: 1px solid #000;
+    border-radius: 12px;
+    height: 30px;
+    width: 20%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.name {
+    cursor: pointer;
+}

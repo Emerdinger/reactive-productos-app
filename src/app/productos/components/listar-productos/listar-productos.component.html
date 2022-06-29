@@ -1,0 +1,29 @@
+<div class="productos-list">
+    <div class="producto-card">
+        <div class="producto-card-top">
+            <div class="producto-info">
+                <h3 (click)="verMas()" class="name">
+                    {{producto.nombre}}
+                </h3>
+                <div class="producto-ca">
+                    <p>Marca:</p>
+                    <span>{{producto.marca}}</span>
+                </div>
+                <div class="producto-ca">
+                    <p>Categoria: </p>
+                    <span>{{producto.categoria}}</span>
+                </div>
+            </div>
+            <div class="producto-img">
+                <img [src]="producto.img" alt="asus-tuf">
+            </div>
+        </div>
+        <div class="producto-mid">
+            {{producto.descripcion}}
+        </div>
+        <div class="producto-bottom">
+            {{ producto.precio | currency: 'COP: '}}
+        </div>
+        <button (click)="eliminar(producto.id)">eliminar</button>
+    </div>
+</div>

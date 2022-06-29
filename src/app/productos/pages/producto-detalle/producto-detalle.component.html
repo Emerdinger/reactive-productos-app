@@ -1,0 +1,27 @@
+<div class="detalle">
+    <div class="not-found" *ngIf="error">
+        <p>{{error.mensaje}}</p>
+        <button>Volver</button>
+    </div>
+    <div class="card-detalle" *ngIf="!error">
+        <div class="info">
+            <img [src]="producto.img" alt="">
+            <div class="info-data">
+                <div class="data">
+                    <h3>{{producto.nombre}}</h3>
+                    <span class="precio">{{ producto.precio | currency: 'COP: '}}</span>
+                    <span class="disponibles">{{producto.cantidad}} disponible</span>
+                    <span class="marca"><b>Marca:</b> {{producto.marca}}</span>
+                    <span><b>Categoria:</b> {{producto.categoria}}</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="more-data">
+            <div class="descripcion">
+                <p>Descripción</p>
+                <span>{{producto.descripcion}}</span>
+            </div>
+        </div>
+    </div>
+</div>

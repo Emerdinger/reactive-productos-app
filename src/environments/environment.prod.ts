@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  baseUrld: 'https://productos-webflux.herokuapp.com/productos'
 };

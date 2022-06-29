@@ -1,0 +1,20 @@
+<div class="agregar">
+    <div class="form-card">
+        <div class="form-header">
+            <h1>Crea tú producto</h1>
+        </div>
+        <div class="form-body">
+            <input type="text" placeholder="Nombre del producto." [(ngModel)]="producto.nombre" required>
+            <textarea name="descripcion" id="" cols="30" rows="10" placeholder="Descripción del producto." [(ngModel)]="producto.descripcion"></textarea>
+            <input type="text" placeholder="Marca" [(ngModel)]="producto.marca">
+            <div class="cat-cant">
+                <input type="text" placeholder="Categoria" [(ngModel)]="producto.categoria">
+                <input type="number" placeholder="Cantidad" min="1" max="300" [(ngModel)]="producto.cantidad">
+            </div>
+            <input type="number" placeholder="Precio" min="0" [(ngModel)]="producto.precio">
+            <input type="text" placeholder="Url imagen" [(ngModel)]="producto.img">
+            <img [src]="producto.img" alt="">
+            <button (click)="agregarProducto()" class="crear-producto-button">Crear</button>
+        </div>
+    </div>
+</div>
